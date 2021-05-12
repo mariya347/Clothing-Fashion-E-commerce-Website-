@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Hijab Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+html{
+scroll-behavior: smooth;
+}
+
+.gotopbtn{
+position: fixed;
+width: 50px;
+height: 50px;
+background: #d2b697;
+bottom: 40px;
+right: 50px;
+
+text-decoration: none;
+text-align: center;
+line-height: 50px;
+color:white;
+font-size: 22px;
+}
+
+.myimage:hover{color:#d2b697;
+      opacity: 0.3;
+      filter: alpha(opacity=30);
+    }
+
+*{font-family:Times New Roman;}
+.text-center{ font-family:Times New Roman;}
+
+.card{width:250px; height:auto; margin-bottom:10px;}
+
+.btn { background-color:#decab3 !important; color:black; border: 2px solid #d2b697;}
+.btn:hover { background-color: #d2b697 !important; color:black; border: 2px solid #d2b697;}
+
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:1px;
+	border-radius:50px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.whatsapp {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.instagram {
+  background: #007bb5;
+  color: white;
+}
+
+.envelope {
+  background: #bb0000;
+  color: white;
+}
+
+
+.onoffswitch3-inner {
+    display: block;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch3-inner > marquee {
+    display: block; float: left; position: relative; width: 100%; height: 30px; padding: 0; line-height: 30px;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+     background-color: #decab3;  border: 1px solid #d2b697; 
+}
+
+.scroll-text{
+    color: black;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Times New Roman';
+}
+
+
+
+.input-group.md-form.form-sm.form-2 input {
+  border: 2px solid #d2b697;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-radius: 25px 0px 0px 25px;
+}
+.btn{
+  background-color:#decab3 !important;
+  border: 2px solid #d2b697 !important;
+}
+.btn:hover{
+
+  background-color: #d2b697 !important;
+}
+
+.menu{
+  font-family: 'Times New Roman';
+}
+.menu:hover{
+  color:  #d2b697 !important;
+}
+
+
+
+
+
+</style>
+<body>
+   
+  <div class="onoffswitch3-inner">
+        <marquee class="scroll-text">We are apologizing but due to this Uncertain Situation of Covid-19 throughout the Country Customers will experience a Delay in Order Deliveries! Hope you Understand. Looking Forward for your Co-Operation!</marquee>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+        <div class="text-center">
+        <img style="cursor: pointer;" src="images/logo-hijab.jpg" width="200" height="30" alt="logo-hijab">
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+       <div class="text-center">
+            <div class="input-group md-form form-sm form-2 pl-0">
+              <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <span class="input-group-text btn" type="submit"><i style="cursor: pointer;" class="fas fa-search"
+                    aria-hidden="true"></i></span>
+                    
+              </div>
+            </div>
+            
+
+          
+      </form>
+      </div>
+      </div>
+     
+      <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
+        <div class="text-center">
+          <div class="d-inline-block dropdown">
+            <i class="fas fa-user px-3 lighten-5" type="button" id="dropdownMenu2" data-toggle="dropdown" data-placement="bottom" title="Account" aria-haspopup="true" aria-expanded="false">
+             
+            </i>
+            
+            <div class="dropdown-menu" >
+              <form class="px-4 py-3">
+                <div class="form-group">
+                  <label for="exampleDropdownFormEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                  <label class="form-check-label" for="dropdownCheck">
+                    Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">New around here? Sign up</a>
+              <a class="dropdown-item" href="#">Forgot password?</a>
+            </div>
+          </div>
+        
+        
+          <div class="d-inline-block dropdown">
+            <i class="fas fa-shopping-cart px-3 lighten-5" type="button" id="dropdownMenu2" data-toggle="dropdown" data-placement="bottom" title="Cart" aria-haspopup="true" aria-expanded="false">
+             
+            </i>
+            
+            <div class="dropdown-menu p-1 text-muted" style="height:70px;"  aria-labelledby="dropdownMenu2">
+              <p>
+                Your shopping cart is empty!
+              </p>
+            </div>
+          </div>
+          <div class="d-inline-block dropdown">
+            <i class="fas fa-heart px-3 lighten-5" type="button" id="dropdownMenu2" data-toggle="dropdown" data-placement="bottom" title="Wishlist" aria-haspopup="true" aria-expanded="false">
+             
+            </i>
+            
+            <div class="dropdown-menu p-1 text-muted" style="height:70px;" aria-labelledby="dropdownMenu2">
+              <p>
+                Your wishlist is empty!
+              </p>
+            </div>
+          </div>
+          
+         
+      </div>
+        
+      </div>
+    </div>
+    </div>
+    
+    <div class="sticky-top" style="position: relative; z-index: 1;">
+    <nav class="navbar navbar-expand-lg">
+      <div class="mx-auto my-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon">   
+              <i class="fas fa-bars" style="color:black; font-size:28px;"></i>
+          </span>
+          </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 dual-collapse2">
+          <ul class="navbar-nav mx-auto mt-3 text-center">
+            <li class="nav-item active">
+              <a style="font-size: 16px; font-weight: 400; color: black; " class="nav-link px-4 menu" href="hijab.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a style="font-size: 16px; font-weight: 400; color: black; " class="nav-link dropdown-toggle px-4 menu" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               OUTWEAR
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item menu" href="abaya.html">ABAYAS</a>
+                <a class="dropdown-item menu" href="coats.html">COATS</a>
+                <a class="dropdown-item menu" href="wedding.html">WEDDING ABAYAS</a>
+
+             </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a style="font-size: 16px; font-weight: 400; color: black; " class="nav-link dropdown-toggle px-4 menu" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               HIJAB
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item menu" href="shawls.html">SHAWL</a>
+                <a class="dropdown-item menu" href="shawls.html">SCARF</a>
+
+             </div>
+            </li>
+            <li class="nav-item active">
+              <a style="font-size: 16px; font-weight: 400; color: black;" class="nav-link px-4 menu" href="outlet.html">OUTLET <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a style="font-size: 16px; font-weight: 400; color: black; " class="nav-link px-4 menu" href="about.html">ABOUT <span class="sr-only">(current)</span></a>
+            </li>
+            
+          </ul>
+      </div>
+  </nav>
+    </div>
+    <div>
+        <h3 class="container text-center mt-4" style="font-family:Times New Roman; border-bottom: 1px solid #d2b697;">WELCOME TO HIJABEAZE</h3>
+        <p class="container text-justify px-0" style="font-family:Times New Roman; font-size: 16px; border: 0px;">We understand that the essence of a woman is not defined by her clothes but character and hence our 
+            clothes try to bring out the innate idea of self expression of different women resonating Islamic 
+            sentiments.
+            <br>
+            <br>
+            EastEssence started out with an intent for modest, comfortable and affordable Islamic attires for the 
+            consumption by masses. Here, you’ll find an amalgamation of various cultural heritages under the 
+            umbrella of Islam through its various cuts, styles, prints and motifs. It celebrates the Islamic 
+            philosophy of dressing modestly with the principle of hijab running as an undercurrent in all its 
+            creations. Be it the Moroccan embroidery, Arabian Abayas, Turkish skirt- dresses or Indian Ikkat print,
+            you’ll see a rendition of all these and much more in our hybrid collection. We have continuously 
+            tried to integrate the elements of faith, and current trends in fashion to make it interesting for 
+            women. So you’ll see a regular Abaya with color block motifs, patches and prints to make it aesthetically 
+            more viable which could be fashioned into your Evening-wear, Occasional-wear or an Everyday-wear respectively. 
+            We also make available modest garments for kids and Men.</p>
+        <h4 class="container text-justify py-1" style="font-family:Times New Roman; border-bottom: 1px solid #d2b697; background-color: #decab3;">A BRIEF BIO ABOUT HIJABEAZE</h4>
+        <p class="container text-justify px-0" style="font-family:Times New Roman; font-size: 16px; border: 0px;">We are based out of Silicon Valley, California and working to cater to a sizeable growing Muslim population 
+            and their appetite for modest dressing that rings in ethnic cultural ethos along with contemporary aesthetics. 
+            Our sizes do justice to all body-types accommodating up to 7XL and we offer customized lengths on almost all 
+            of our ensembles. We are equipped with state of the art technology to furnish your orders and address your 
+            grievances, if any in a timely manner. We also offer return policy option furthering the process of redressal. 
+            With assisted customer representatives to help you select, navigate and make good purchases, we ensure your 
+            experience with us is a happy one. Have your pick from a plethora of different ensembles like modest shrugs, 
+            cardigans, hijabs, jilbabs, dishdashas, prayer-set and other Namaaz essentials.
+            <br>
+            <br>
+            Alternatively, apart from the retail aspect of EastEssence, we make significant contribution with our social 
+            commitments to scale the divide. With our school project in Sudan imparting technical know-how for sustainable 
+            livelihood, to our catered scholarships for the girl child or collecting funds for the rehabilitation of needy 
+            children, we are invested in many such activities in building communities stronger and independent. Read all about 
+            it here.
+            <br>
+            <br>
+            With a social presence in 68 countries and counting, catering to diversified ethnicities across geographies, 
+            EE has surely come a long way in defining the nexus between, Modesty, Modernity & Muslim.</p>
+    </div>
+  <footer class="page-footer font-small mdb-color pt-3">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3" style= "background-color: #decab3;  border: 1px solid #d2b697; ">
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                <p style="font-size: 14px; font-family:Times New Roman;" >Head Office,<br>
+                    A-25, Bahadurabad Chowrangi Karachi, Pakistan</p>
+                <p style="font-size: 14px; font-family:Times New Roman;">
+                    <i style="font-size: 14px;" class="fas fa-phone-alt mr-2"></i><span class="mr-3"> 111-729-526</span>
+                    <i style="font-size: 14px;" class="fas fa-globe mr-2"></i> (+0092-213) 4130786-90</p>
+                <p style="font-size: 14px; font-family:Times New Roman;">
+                    <i style="font-size: 14px;" class="fas fa-phone-alt mr-2"></i>CELL: 92-311-1729526</p>
+                <p style="font-size: 14px; font-family:Times New Roman;">
+                    <i style="font-size: 14px;" class="fas fa-phone-alt mr-2"></i>USA NO +1(716)941 7792</p>
+                <p style="font-size: 14px; font-family:Times New Roman;">
+                    <i style="font-size: 14px;" class="fas fa-phone-alt mr-2"></i>UK NO (+44)115 970 6256</p>
+                <p style="font-size: 14px; font-family:Times New Roman;">
+                    <i style="font-size: 14px;" class="far fa-envelope mr-2"></i>info@hijabeaze.com</p>
+            </div>
+            <hr class="w-100 clearfix d-md-none">
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4" style="font-family: Times New Roman; font-size:14px; font-weight: 900;">Useful links</h6>
+                <p class="font-weight-bold"><b>_______</b>___________________________________________</p>
+            </div>
+            <hr class="w-100 clearfix d-md-none">
+            <div class="col-md-6 col-lg-7 col-xl-3 mx-auto mt-3 ext-md-right">
+                <h6 class="text-uppercase mb-4" style="font-family: Times New Roman; font-size:14px; font-weight: 900;">Connect With Us</h6>
+                <a href="#" style="color: black;">
+                    <i class="fab fa-facebook-f mr-3"> </i>
+                </a>
+                <a href="#" style="color: black;">
+                    <i class="fab fa-twitter mr-3"> </i>
+                </a>
+                <a href="#" style="color: black;">
+                    <i class="fab fa-youtube mr-3"> </i>
+                </a>
+                <a href="#" style="color: black;">
+                    <i class="fab fa-whatsapp mr-3"> </i>
+                </a>
+                <a href="#" style="color: black;">
+                    <i class="fab fa-instagram"> </i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="page-footer font-small" style="background-color: #decab3; border-bottom: 1px solid #d2b697;">
+  <div class="footer-copyright py-2 px-5 text-center" style="font-size: 14px; font-family:Times New Roman;">COPYRIGHT © 2016 HIJABEAZE. ALL RIGHTS RESERVED
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+  
+
+      
+               
+                     
+                   
+        
+
+
+    
+<script src="https://kit.fontawesome.com/414da9e713.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
